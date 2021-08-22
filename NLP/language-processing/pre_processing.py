@@ -10,6 +10,10 @@ class PreProcessing:
     def __init__(self):
         pass
 
+    def text_pre_processing(input):
+        # test
+        return ""
+
     def text_cleaning(self, input, regex):  # input 값 정규식 전처리 ( 구두점 기준 전처리 )
         shortword = re.compile(regex)
         return shortword.sub('', input)
@@ -36,4 +40,5 @@ class PreProcessing:
     def encoded(self, input):
         tokenizer = Tokenizer()
         tokenizer.fit_on_texts_to(input)
+        encoded = tokenizer.texts_to_sequences(input)
         encoded = tokenizer.texts_to_sequences(input)
