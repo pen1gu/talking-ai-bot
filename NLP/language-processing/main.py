@@ -17,3 +17,6 @@ def spell_check(input): # 문장 체크
     spelled_sent = spell_checker.check(input)
     hanspell_sent = spelled_sent.checked
     return hanspell_sent
+
+if __name__ == '__main__':
+    print(spell_check("안늉하세요"))
