@@ -9,7 +9,7 @@
 
 ## Introduce
 
-This project is where we develop chatbots for use with discode and VR.
+This program creates a chatbot using text prediction.
 
 ## Stack
 
